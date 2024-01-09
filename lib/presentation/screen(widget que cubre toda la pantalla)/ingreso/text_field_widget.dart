@@ -21,12 +21,17 @@ class _MyTextFieldWidgetState extends State<MyTextFieldWidget> {
       ),
       child: TextField(
         controller: _controller,
-        style: const TextStyle(fontWeight: FontWeight.w600),
+        style: const TextStyle(
+            fontFamily: 'Linotte', fontWeight: FontWeight.normal),
         decoration: const InputDecoration(
           labelText: "Nombre",
           // Quitar los bordes del TextField
           border: InputBorder.none,
-          labelStyle: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
+          labelStyle: TextStyle(
+              color: Color.fromARGB(167, 0, 0, 0),
+              fontFamily: 'Linotte',
+              fontSize: 22,
+              fontWeight: FontWeight.w100),
           contentPadding: EdgeInsets.symmetric(vertical: 5, horizontal: 20),
         ),
       ),

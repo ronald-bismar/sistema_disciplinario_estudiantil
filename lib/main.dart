@@ -40,21 +40,42 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: backgroundColor,
       body: Container(
         alignment: Alignment.center,
-        child: const Column(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Padding(
+            Image.asset(
+              'assets/escuela.png',
+              width: 100,
+              height: 100,
+            ),
+            Container(
+                margin: const EdgeInsets.symmetric(
+                    vertical:
+                        30.0), // Puedes ajustar el valor según tus necesidades
+                child: const Text(
+                  'Bienvenido',
+                  style: TextStyle(
+                      fontFamily: 'Baloo',
+                      fontSize: 35,
+                      fontWeight: FontWeight.w900),
+                )),
+            const Padding(
+              padding:
+                  EdgeInsets.only(top: 30, bottom: 20, left: 40.0, right: 40.0),
+              child: MyTextFieldWidget(),
+            ),
+            const Padding(
               padding:
                   EdgeInsets.only(top: 20, bottom: 20, left: 40.0, right: 40.0),
               child: MyTextFieldWidget(),
             ),
-            Padding(
+            const Padding(
               padding:
                   EdgeInsets.only(top: 20, bottom: 20, left: 40.0, right: 40.0),
               child: MyTextFieldWidget(),
             ),
-            SizedBox(height: 30),
-            Padding(
+            const SizedBox(height: 30),
+            const Padding(
               padding:
                   EdgeInsets.only(top: 20, bottom: 20, left: 40.0, right: 40.0),
               child: MyButton(),

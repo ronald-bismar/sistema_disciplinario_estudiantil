@@ -10,27 +10,39 @@ class MyButton extends StatefulWidget {
 class _MyButtons extends State<MyButton> {
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
         FilledButton(
           style: ButtonStyle(
-              backgroundColor:
-                  MaterialStatePropertyAll(Color.fromARGB(255, 37, 54, 76))),
+              padding: MaterialStateProperty.all(const EdgeInsets.all(15)),
+              backgroundColor: const MaterialStatePropertyAll(
+                  Color.fromARGB(255, 37, 54, 76)),
+              shape: MaterialStatePropertyAll(RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0)))),
           onPressed: null,
-          child: Text(
-            "Ingresar",
-            style: TextStyle(color: Color.fromARGB(255, 220, 220, 220)),
+          child: const Text(
+            "REGISTRO",
+            style: TextStyle(
+                color: Color.fromARGB(255, 220, 220, 220),
+                fontFamily: 'Linotte',
+                fontWeight: FontWeight.w100),
           ),
         ),
         FilledButton(
             style: ButtonStyle(
-                backgroundColor:
-                    MaterialStatePropertyAll(Color.fromARGB(255, 37, 54, 76))),
+                padding: MaterialStateProperty.all(const EdgeInsets.all(15)),
+                backgroundColor: const MaterialStatePropertyAll(
+                    Color.fromARGB(255, 37, 54, 76)),
+                shape: MaterialStatePropertyAll(RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0)))),
             onPressed: null,
-            child: Text(
-              "Registro",
-              style: TextStyle(color: Color.fromARGB(255, 220, 220, 220)),
+            child: const Text(
+              "INGRESAR",
+              style: TextStyle(
+                  color: Color.fromARGB(255, 220, 220, 220),
+                  fontFamily: 'Linotte',
+                  fontWeight: FontWeight.w100),
             ))
       ],
     );
