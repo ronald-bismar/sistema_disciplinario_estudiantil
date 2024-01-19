@@ -15,7 +15,7 @@ class _MyButtons extends State<MyButton> {
       children: <Widget>[
         FilledButton(
           style: ButtonStyle(
-              padding: MaterialStateProperty.all(const EdgeInsets.all(15)),
+              padding: MaterialStateProperty.all(const EdgeInsets.all(12)),
               backgroundColor: const MaterialStatePropertyAll(
                   Color.fromARGB(255, 37, 54, 76)),
               shape: MaterialStatePropertyAll(RoundedRectangleBorder(
@@ -31,7 +31,7 @@ class _MyButtons extends State<MyButton> {
         ),
         FilledButton(
             style: ButtonStyle(
-                padding: MaterialStateProperty.all(const EdgeInsets.all(15)),
+                padding: MaterialStateProperty.all(const EdgeInsets.all(12)),
                 backgroundColor: const MaterialStatePropertyAll(
                     Color.fromARGB(255, 37, 54, 76)),
                 shape: MaterialStatePropertyAll(RoundedRectangleBorder(

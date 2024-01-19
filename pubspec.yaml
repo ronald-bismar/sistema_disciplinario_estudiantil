@@ -75,11 +75,8 @@ flutter:
   fonts:
     - family: Linotte
       fonts:
-        - asset: fonts/linotteheavy.otf
-        - asset: fonts/linottebold.otf
         - asset: fonts/linottesemibold.otf
         - asset: fonts/linotteregular.otf
-        - asset: fontsLinotte Light.otf
     #         style: italic
     - family: Baloo
       fonts:

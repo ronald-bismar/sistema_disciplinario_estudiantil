@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class MyTextFieldWidget extends StatefulWidget {
-  const MyTextFieldWidget({super.key});
+  final String label;
+  const MyTextFieldWidget({Key? key, required this.label}) : super(key: key);
 
   @override
   // ignore: library_private_types_in_public_api
@@ -16,23 +17,23 @@ class _MyTextFieldWidgetState extends State<MyTextFieldWidget> {
     Color backgroundColor = const Color(0xFFc5e1f2);
     return Container(
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(10),
         color: backgroundColor,
       ),
       child: TextField(
         controller: _controller,
         style: const TextStyle(
             fontFamily: 'Linotte', fontWeight: FontWeight.normal),
-        decoration: const InputDecoration(
-          labelText: "Nombre",
+        decoration: InputDecoration(
+          labelText: widget.label,
           // Quitar los bordes del TextField
           border: InputBorder.none,
-          labelStyle: TextStyle(
+          labelStyle: const TextStyle(
               color: Color.fromARGB(167, 0, 0, 0),
               fontFamily: 'Linotte',
-              fontSize: 22,
+              fontSize: 20,
               fontWeight: FontWeight.w100),
-          contentPadding: EdgeInsets.symmetric(vertical: 5, horizontal: 20),
+          contentPadding: const EdgeInsets.symmetric(horizontal: 20),
         ),
       ),
     );
