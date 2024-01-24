@@ -29,7 +29,7 @@ class _MyTextFieldWidgetState extends State<MyTextFieldWidget> {
           // Quitar los bordes del TextField
           border: InputBorder.none,
           labelStyle: const TextStyle(
-              color: Color.fromARGB(167, 0, 0, 0),
+              color: Color.fromARGB(210, 0, 0, 0),
               fontFamily: 'Linotte',
               fontSize: 20,
               fontWeight: FontWeight.w100),

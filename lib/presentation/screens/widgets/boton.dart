@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sistema_disciplinario_estudiantil/presentation/login_tutor.dart';
 
 class MyButton extends StatefulWidget {
   const MyButton({super.key});
@@ -20,7 +21,10 @@ class _MyButtons extends State<MyButton> {
                   Color.fromARGB(255, 37, 54, 76)),
               shape: MaterialStatePropertyAll(RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0)))),
-          onPressed: null,
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const LoginTutor()));
+          },
           child: const Text(
             "REGISTRO",
             style: TextStyle(

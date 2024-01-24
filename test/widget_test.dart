@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:sistema_disciplinario_estudiantil/login_tutor.dart';
+import 'package:sistema_disciplinario_estudiantil/presentation/login_tutor.dart';
 
 import 'package:sistema_disciplinario_estudiantil/main.dart';
 

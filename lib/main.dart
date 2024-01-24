@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:sistema_disciplinario_estudiantil/presentation/screen(widget%20que%20cubre%20toda%20la%20pantalla)/ingreso/boton.dart';
-import 'package:sistema_disciplinario_estudiantil/presentation/screen(widget%20que%20cubre%20toda%20la%20pantalla)/ingreso/checkbox_list_tile.dart';
-import 'package:sistema_disciplinario_estudiantil/presentation/screen(widget%20que%20cubre%20toda%20la%20pantalla)/ingreso/text_field_widget.dart';
+import 'package:sistema_disciplinario_estudiantil/presentation/screens/widgets/boton.dart';
+import 'package:sistema_disciplinario_estudiantil/presentation/screens/widgets/checkbox_list_tile.dart';
+import 'package:sistema_disciplinario_estudiantil/presentation/screens/widgets/logo.dart';
+import 'package:sistema_disciplinario_estudiantil/presentation/screens/widgets/text_field.dart';
+import 'package:sistema_disciplinario_estudiantil/presentation/screens/registro_datos_estudiantes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -46,14 +48,10 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Column(
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(
-                      top: 40, bottom: 0, left: 0, right: 0),
-                  child: Image.asset(
-                    'assets/escuela.png',
-                    width: 80,
-                    height: 80,
-                  ),
+                const Padding(
+                  padding:
+                      EdgeInsets.only(top: 40, bottom: 0, left: 0, right: 0),
+                  child: Logo(),
                 ),
                 Container(
                     margin: const EdgeInsets.symmetric(
@@ -72,8 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
             const Column(
               children: [
                 Padding(
-                  padding: EdgeInsets.only(
-                      top: 0, bottom: 10, left: 40.0, right: 40.0),
+                  padding: EdgeInsets.only(bottom: 10, left: 40.0, right: 40.0),
                   child: MyTextFieldWidget(
                     label: "Correo electronico",
                   ),
@@ -100,8 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: MyButton(),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(
-                      top: 0, bottom: 0, left: 30.0, right: 30.0),
+                  padding: EdgeInsets.only(left: 30.0, right: 30.0),
                   child: CheckBoxListTileApp(),
                 ),
               ],
