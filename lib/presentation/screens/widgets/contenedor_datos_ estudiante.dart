@@ -28,8 +28,8 @@ class _DataStudent_State extends State<DataStudent> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: const Color.fromARGB(255, 48, 104, 176),
         decoration: const BoxDecoration(
+            color: Color.fromARGB(255, 48, 104, 176),
             borderRadius: BorderRadius.all(Radius.circular((20)))));
   }
 }
